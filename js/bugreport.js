@@ -51,8 +51,8 @@ function updateSyntax() {
             steps = steps + ' - ' + step;
         }
     }
-    if (desc && expected && actual && client && system) {
-        bugtext = '__**' + desc + '**__' + ' Expected Result: ' + expected + ' Actual Result: ' + actual + ' Client Settings: ' + client + ' System Settings: ' + system;
+    if (desc && expected && actual && client) {
+        bugtext = '__**' + desc + '모집' + '**__' + '\n' + '활동 내용: ' + expected + '\n' + '모집 일시: ' + actual + '\n' + '모집 인원수: ' + client + '모집된 인원: ' + system;
     }
     $('#syntax').text(bugtext);
     $('#lrg-rep').toggleClass('hidden', bugtext.length < 1400);
