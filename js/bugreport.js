@@ -52,7 +52,7 @@ function updateSyntax() {
         }
     }
     if (desc && expected && actual && client) {
-        bugtext = '__**' + desc + '모집' + '**__' + '\n' + '활동 내용: ' + expected + '\n' + '모집 일시: ' + actual + '\n' + '모집 인원수: ' + client + '\n' + '\n' + '모집된 인원: ' + system;
+        bugtext = '__**' + desc + ' 모집' + '**__' + '\n' + '활동 내용: ' + expected + '\n' + '모집 일시: ' + actual + '\n' + '모집 인원수: ' + client + '\n' + '\n' + '모집된 인원: ' + system;
     }
     $('#syntax').text(bugtext);
     $('#lrg-rep').toggleClass('hidden', bugtext.length < 1400);
